@@ -108,10 +108,10 @@ static void output_fcount(FILE* f, struct flb_out_fcount_config *ctx,
 {
     fprintf(f,
            "[%s] [%lu, {"
-           "\"counts\":%lu, "
-           "\"bytes\":%lu, "
-           "\"counts/%s\":%lu, "
-           "\"bytes/%s\":%lu }"
+           "\"counts\":%llu, "
+           "\"bytes\":%llu, "
+           "\"counts/%s\":%llu, "
+           "\"bytes/%s\":%llu }"
            "]\n",
            PLUGIN_NAME, buf->until,
            buf->counts,
